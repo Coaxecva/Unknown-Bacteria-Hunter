@@ -1,0 +1,85 @@
+1
+Staphylococcus warneri SG1
+Staphylococcus aureus
+Staphylococcus lugdunensis HKU09-01
+Staphylococcus simiae CCM 7213
+Staphylococcus epidermidis ATCC 12228
+Staphylococcus aureus subsp. aureus NCTC 8325
+Staphylococcus capitis
+Megasphaera cerevisiae DSM 20462
+Staphylococcus capitis
+Staphylococcus aureus
+2
+Staphylococcus cohnii subsp. cohnii
+Staphylococcus capitis
+Staphylococcus cohnii subsp. cohnii
+Staphylococcus cohnii subsp. cohnii
+Staphylococcus epidermidis ATCC 12228
+Staphylococcus capitis
+Staphylococcus capitis
+Staphylococcus cohnii subsp. cohnii
+Staphylococcus cohnii subsp. cohnii
+3
+Bergeyella zoohelcum ATCC 43767
+Chryseobacterium sp. ERMR1:04
+Riemerella anatipestifer ATCC 11845 = DSM 15868
+Chryseobacterium sp. ERMR1:04
+Chryseobacterium soli
+Chryseobacterium sp. ERMR1:04
+Chryseobacterium sp. ERMR1:04
+Chryseobacterium sp. ERMR1:04
+Chryseobacterium sp. ERMR1:04
+Bergeyella zoohelcum ATCC 43767
+4
+Chryseobacterium aquaticum
+Chryseobacterium sp. ERMR1:04
+Chryseobacterium greenlandense
+Chryseobacterium sp. ERMR1:04
+Chryseobacterium gallinarum
+Chryseobacterium sp. YR460
+Chryseobacterium sp. ERMR1:04
+Chryseobacterium sp. ERMR1:04
+Chryseobacterium sp. ERMR1:04
+Chryseobacterium sp. ERMR1:04
+5
+Staphylococcus haemolyticus JCSC1435
+Staphylococcus warneri SG1
+Staphylococcus aureus
+Staphylococcus lugdunensis HKU09-01
+Staphylococcus epidermidis ATCC 12228
+Staphylococcus capitis
+Megasphaera cerevisiae DSM 20462
+Staphylococcus capitis
+Staphylococcus aureus
+Staphylococcus hominis subsp. hominis C80
+6
+Staphylococcus haemolyticus JCSC1435
+Staphylococcus warneri SG1
+Staphylococcus aureus
+Staphylococcus lugdunensis HKU09-01
+Staphylococcus epidermidis ATCC 12228
+Staphylococcus capitis
+Megasphaera cerevisiae DSM 20462
+Staphylococcus capitis
+Staphylococcus aureus
+Staphylococcus hominis subsp. hominis C80
+7
+Chryseobacterium sp. CF299
+Chryseobacterium angstadtii
+Chryseobacterium formosense
+Chryseobacterium antarcticum
+Bergeyella zoohelcum ATCC 43767
+Riemerella anatipestifer ATCC 11845 = DSM 15868
+Riemerella columbina DSM 16469
+Riemerella columbina DSM 16469
+Bergeyella zoohelcum ATCC 43767
+8
+Riemerella columbina DSM 16469
+Chryseobacterium antarcticum
+Chryseobacterium palustre DSM 21579
+Chryseobacterium sp. ERMR1:04
+Chryseobacterium sp. ERMR1:04
+Chryseobacterium soli
+Riemerella columbina DSM 16469
+Chryseobacterium sp. ERMR1:04
+Chryseobacterium sp. Leaf404
