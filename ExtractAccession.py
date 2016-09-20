@@ -5,26 +5,23 @@ f1 = open(fn1)
 
 fs = True
 idx = 0
-t = set()
+#t = set()
 
 while True:
 	info= f1.readline()
 	if info=='' or info==" ":
 		break
-	if info[0]=="#" and fs:
+	if info[0]=="#":
 		idx += 1
-		print(idx)
-		fs = False		
-	if info[0]!="#" and fs==False:
-		fs = True
-		for id in t:
-			print(id)
 		t = set()
-	if info[0]!="#":
-		#print(info.split())
-		if not info.split():
-			break
-		t.add(info.split()[2])
-		#print(t)
-
+		while f1.readline()[0] == "#": continue
+		while True:
+			info = f1.readline()
+			if not info.split() or info[0]=="#":
+				break
+			#print(info.split())
+			t.add(info.split()[2])
+		print(idx)
+		for accs in t:
+			print(accs)
 f1.close()
