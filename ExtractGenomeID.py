@@ -1,4 +1,5 @@
 import sys
+from Bio.Seq import Seq
 
 GenomeID = {}
 
@@ -14,14 +15,18 @@ def ExtractFASTQ(fname):
 		#print(line2.rstrip())
 		GenomeID[line2.rstrip()] = line1.rstrip().split()[1] 
 
+
 # Retrieve GenomeID from unknow genome reads
 def RetriveGenome(fname):
 	with open(fname) as f:
 		content = [line.rstrip() for line in f]
 		
-	for read in content:
+	for i, read in enumerate(content):
 		if read in GenomeID:
 			print(GenomeID[read])
+		# else:
+		# 	seq = Seq(read)
+		# 	print(i, read, str(seq.reverse_complement()), str(seq.reverse_complement()) in GenomeID)
 
 
 if __name__ == '__main__':
