@@ -5,6 +5,7 @@ GenomeID = {}
 
 # Extract GenomeID from fastq
 def ExtractFASTQ(fname):
+	# Read a fastq file of unmapped reads
 	with open(fname) as f:
 		content = f.readlines()
 
@@ -18,18 +19,19 @@ def ExtractFASTQ(fname):
 
 # Retrieve GenomeID from unknow genome reads
 def RetriveGenome(fname):
+	# Read unmmapped read from a Bowtie2 sam file
 	with open(fname) as f:
-		content = [line.rstrip() for line in f]
+		content = [line.rstrip().split()[9] for line in f]
 		
 	# Open a file
-	fo1 = open("correct_reads.txt", "wb")
-	fo2 = open("correct_clusters.txt", "wb")
+	fo1 = open("correct_reads.txt", "w")
+	fo2 = open("correct_clusters.txt", "w")
 
 	
 	for i, read in enumerate(content):
 		if read in GenomeID:
-			fo1.write(read);
-			fo2.write(GenomeID[read]);
+			fo1.write(read + "\n")
+			fo2.write(GenomeID[read] + "\n")
 		#	print(GenomeID[read])
 		# else:
 		# 	seq = Seq(read)
