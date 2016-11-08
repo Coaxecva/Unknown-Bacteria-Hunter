@@ -1,0 +1,35 @@
+predict:  predic_clusters_2_91.txt
+groundtruth:  correct_clusters.txt
+Mutual info score:  0.182218261143
+Rand Index:  0.05735690242629187
+Group:  624 0
+Group:  715 0
+Group:  644 0.0
+Group:  784 0
+Group:  793 2.896341422014751
+Group:  468 0
+Group:  610 0.0
+Group:  621 0.0
+Group:  738 0
+Group:  531 0
+Group:  687 0.0
+Group:  322 0
+Group:  771 0
+Group:  618 0.0
+Group:  799 0.0
+Group:  735 2.1942637422969744
+Group:  498 0
+Group:  751 0.0
+Group:  820 0.0
+Group:  825 0
+Group:  755 0
+Group:  726 0
+Group:  534 0
+Group:  699 0
+Group:  700 0
+Group:  674 1.666954748741811
+Group:  753 0
+Group:  801 0
+Group:  790 0
+Group:  805 2.164219349795984
+Group:  785 0.0
