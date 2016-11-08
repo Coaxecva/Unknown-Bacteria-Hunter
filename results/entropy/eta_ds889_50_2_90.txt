@@ -2,30 +2,16 @@ predict:  predic_clusters_2_90.txt
 groundtruth:  correct_clusters.txt
 Mutual info score:  0.182106800995
 Rand Index:  0.05726752470305501
-Group:  531 0
-Group:  498 0
-Group:  753 0
-Group:  825 0
-Group:  799 0.0
-Group:  735 2.194263742296974
-Group:  751 0.0
-Group:  726 0.0
-Group:  468 0
-Group:  738 0
-Group:  610 0.0
-Group:  784 2.8944483996157184
-Group:  785 0.0
-Group:  805 2.1879829059634193
-Group:  700 0
-Group:  715 0
-Group:  755 0
-Group:  534 0
-Group:  621 0.0
-Group:  618 0.0
-Group:  820 0.0
-Group:  801 0
-Group:  644 0.0
-Group:  699 0
-Group:  674 1.666954748741811
-Group:  322 0
-Group:  790 0
+4.175806352234592 	 Counter({'reference=870_4Z11_TM7[G-6]sp._HOT_870_Clone_4Z11_GB_KM018322_Phylotype_X_4': 33, 'reference=025AV011_Leptothrixsp._HOT_025_Clone_AV011a_GB_AF385528_Phylotype_X_0': 32, 'reference=121BB166_Anaeroglobusgeminatus_HOT_121_Clone_BB166_GB_AF287783_Named_G_3': 30, 'reference=026CA004_Schlegelellaaquatica_HOT_026_Clone_CA004_GB_AF385538_Named_X_1': 24, 'reference=012_2982_Kingellasp._HOT_012_Clone_070038_218_GB_JQ462982_Phylotype_X_3': 20, 'reference=012DE012_Kingellasp._HOT_012_Clone_DE012_GB_AF366267_Phylotype_X_3': 19, 'reference=024_5876_Schlegelellathermodepolymerans_HOT_024_Strain_DhA-71_GB_AF125876_Named_X_0': 18, 'reference=007_3452_Porphyrobactertepidarius_HOT_007_Strain_4b_GB_AJ223452_Named_X_2': 16, 'reference=022AP009_Lautropiamirabilis_HOT_022_Clone_AP009_GB_AY005030_Named_G_5': 15, 'reference=804_8837_Lactococcuslactis_HOT_804_Strain_ATCC19435_GB_M58837_Named_G_2': 15, 'reference=023_0186_Delftiaacidovorans_HOT_023_Strain_MBIC1305_GB_AB020186_Named_G_2': 15, 'reference=028_5031_Rhodocyclussp._HOT_028_Strain_A08KA_GB_AY005031_Unnamed_X_0': 15, 'reference=013_9613_Neisseriabacilliformis_HOT_013_Clone_P4D1-729_GB_EF509613_Named_G_4': 14, 'reference=012_2485_Kingellasp._HOT_012_Clone_069088_248_GB_JQ452485_Phylotype_X_3': 11, 'reference=023_2803_Delftiaacidovorans_HOT_023_Strain_158_GB_AJ002803_Named_G_2': 10, 'reference=013AK105_Neisseriabacilliformis_HOT_013_Clone_AK105_GB_AY005029_Named_G_4': 9, 'reference=013_5756_Neisseriabacilliformis_HOT_013_Strain_S4_GB_KM225756_Named_G_4': 7, 'reference=022_3223_Lautropiamirabilis_HOT_022_Strain_Fredericksen_GB_X73223_Named_G_5': 7, 'reference=037AY088_Stenotrophomonasnitritireducens_HOT_037_Clone_AY088_GB_AF385546_Named_X_1': 5, 'reference=018_0511_Neisseriasp._HOT_018_Clone_069082_036_GB_JQ450511_Phylotype_X_4': 2, 'reference=020_5028_Neisseriasp._HOT_020_Strain_B33KA_GB_AY005028_Unnamed_G_3': 2, 'reference=020_1395_Neisseriasp._HOT_020_Clone_069085_216_GB_JQ451395_Unnamed_G_3': 1, 'reference=738_4575_Anaerococcusprevotii_HOT_738_Strain_DSM20548_GB_NR_074575_Named_G_1': 1})
+0.0 	 Counter({'reference=121BB166_Anaeroglobusgeminatus_HOT_121_Clone_BB166_GB_AF287783_Named_G_3': 3})
+0.0 	 Counter({'reference=862_3437_Bifidobacteriumlongum_HOT_862_Strain_ATCC15697_GB_NR_043437_Named_G_0': 4})
+0.0 	 Counter({'reference=870_4Z11_TM7[G-6]sp._HOT_870_Clone_4Z11_GB_KM018322_Phylotype_X_4': 6})
+3.1656534194143036 	 Counter({'reference=022AP009_Lautropiamirabilis_HOT_022_Clone_AP009_GB_AY005030_Named_G_5': 45, 'reference=028_5031_Rhodocyclussp._HOT_028_Strain_A08KA_GB_AY005031_Unnamed_X_0': 38, 'reference=121BB166_Anaeroglobusgeminatus_HOT_121_Clone_BB166_GB_AF287783_Named_G_3': 37, 'reference=024_5876_Schlegelellathermodepolymerans_HOT_024_Strain_DhA-71_GB_AF125876_Named_X_0': 32, 'reference=022_3223_Lautropiamirabilis_HOT_022_Strain_Fredericksen_GB_X73223_Named_G_5': 30, 'reference=026CA004_Schlegelellaaquatica_HOT_026_Clone_CA004_GB_AF385538_Named_X_1': 20, 'reference=025AV011_Leptothrixsp._HOT_025_Clone_AV011a_GB_AF385528_Phylotype_X_0': 17, 'reference=804_8837_Lactococcuslactis_HOT_804_Strain_ATCC19435_GB_M58837_Named_G_2': 9, 'reference=027_5039_Cupriavidusgilardii_HOT_027_Strain_C37KA_GB_AY005039_Named_X_2': 4, 'reference=037AY088_Stenotrophomonasnitritireducens_HOT_037_Clone_AY088_GB_AF385546_Named_X_1': 4, 'reference=862_3437_Bifidobacteriumlongum_HOT_862_Strain_ATCC15697_GB_NR_043437_Named_G_0': 3, 'reference=023_2803_Delftiaacidovorans_HOT_023_Strain_158_GB_AJ002803_Named_G_2': 3, 'reference=746_1986_Actinomycesradicidentis_HOT_746_Strain_CCUG36733_GB_AJ251986_Named_G_0': 1})
+0.0 	 Counter({'reference=931_7552_Bergeyellasp._HOT_931_Clone_069063_075_GB_JQ447552_Phylotype_X_3': 18})
+2.4049073493961193 	 Counter({'reference=804_8837_Lactococcuslactis_HOT_804_Strain_ATCC19435_GB_M58837_Named_G_2': 10, 'reference=022_3223_Lautropiamirabilis_HOT_022_Strain_Fredericksen_GB_X73223_Named_G_5': 6, 'reference=025AV011_Leptothrixsp._HOT_025_Clone_AV011a_GB_AF385528_Phylotype_X_0': 1, 'reference=027_5039_Cupriavidusgilardii_HOT_027_Strain_C37KA_GB_AY005039_Named_X_2': 1, 'reference=022AP009_Lautropiamirabilis_HOT_022_Clone_AP009_GB_AY005030_Named_G_5': 1, 'reference=023_2803_Delftiaacidovorans_HOT_023_Strain_158_GB_AJ002803_Named_G_2': 1, 'reference=026CA004_Schlegelellaaquatica_HOT_026_Clone_CA004_GB_AF385538_Named_X_1': 1, 'reference=738_4575_Anaerococcusprevotii_HOT_738_Strain_DSM20548_GB_NR_074575_Named_G_1': 1, 'reference=037AY088_Stenotrophomonasnitritireducens_HOT_037_Clone_AY088_GB_AF385546_Named_X_1': 1})
+0.0 	 Counter({'reference=804_8837_Lactococcuslactis_HOT_804_Strain_ATCC19435_GB_M58837_Named_G_2': 3})
+0.0 	 Counter({'reference=738_4575_Anaerococcusprevotii_HOT_738_Strain_DSM20548_GB_NR_074575_Named_G_1': 2})
+0.0 	 Counter({'reference=746_1986_Actinomycesradicidentis_HOT_746_Strain_CCUG36733_GB_AJ251986_Named_G_0': 17})
+3.156592087983249 	 Counter({'reference=804_8837_Lactococcuslactis_HOT_804_Strain_ATCC19435_GB_M58837_Named_G_2': 42, 'reference=024_5876_Schlegelellathermodepolymerans_HOT_024_Strain_DhA-71_GB_AF125876_Named_X_0': 28, 'reference=026CA004_Schlegelellaaquatica_HOT_026_Clone_CA004_GB_AF385538_Named_X_1': 26, 'reference=746_1986_Actinomycesradicidentis_HOT_746_Strain_CCUG36733_GB_AJ251986_Named_G_0': 21, 'reference=025AV011_Leptothrixsp._HOT_025_Clone_AV011a_GB_AF385528_Phylotype_X_0': 14, 'reference=022AP009_Lautropiamirabilis_HOT_022_Clone_AP009_GB_AY005030_Named_G_5': 7, 'reference=931_7552_Bergeyellasp._HOT_931_Clone_069063_075_GB_JQ447552_Phylotype_X_3': 6, 'reference=022_3223_Lautropiamirabilis_HOT_022_Strain_Fredericksen_GB_X73223_Named_G_5': 6, 'reference=028_5031_Rhodocyclussp._HOT_028_Strain_A08KA_GB_AY005031_Unnamed_X_0': 4, 'reference=121BB166_Anaeroglobusgeminatus_HOT_121_Clone_BB166_GB_AF287783_Named_G_3': 4, 'reference=738_4575_Anaerococcusprevotii_HOT_738_Strain_DSM20548_GB_NR_074575_Named_G_1': 3, 'reference=742_1701_Mogibacteriumpumilum_HOT_742_Strain_ATCC700696_GB_AB021701_Named_G_0': 1, 'reference=946_0755_Haemophiluspittmaniae_HOT_946_Strain_CCUG48703_GB_AJ290755_Named_G_4': 1, 'reference=037AY088_Stenotrophomonasnitritireducens_HOT_037_Clone_AY088_GB_AF385546_Named_X_1': 1, 'reference=870_4Z11_TM7[G-6]sp._HOT_870_Clone_4Z11_GB_KM018322_Phylotype_X_4': 1, 'reference=118BS095_Dialisterinvisus_HOT_118_Clone_BS095_GB_AF287787_Named_G_5': 1})
+0.0 	 Counter({'reference=738_4575_Anaerococcusprevotii_HOT_738_Strain_DSM20548_GB_NR_074575_Named_G_1': 4})
+0.0 	 Counter({'reference=922_2838_Peptostreptococcaceae[XI][G-7]sp._HOT_922_Clone_ncd2459c12c2_GB_JF212838_Phylotype_X_3': 3})
