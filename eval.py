@@ -1,7 +1,8 @@
 import sys
 from sklearn.metrics.cluster import adjusted_mutual_info_score, adjusted_rand_score
 
-
+import math
+from collections import Counter
 import pandas as pd
 
 def eta(data, unit='natural'):
@@ -49,8 +50,11 @@ if __name__ == '__main__':
 		df = pd.DataFrame({ 'groundtruth': content1, 
 							'predict': content })
 
-		for i in unique_val:
-			print(df[i])
+		for label in unique_val:
+			#print(label)
+			#print(df[df['predict']==label])
+			group = list(df[df['predict']==label]['groundtruth'])
+			print("Group: ", label, eta(group))			
 
 	else:
 		print("Lengths of two groups are not equal!!!")
