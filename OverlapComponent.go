@@ -7,6 +7,9 @@ import (
 	"log"
 	"os"
 	"flag"
+	"crypto/sha256"
+	//"./mapset"
+	"./unionfind"
 )
 
 // DNA read
@@ -47,6 +50,27 @@ func ReadSequence(file string) []DNARead{
     for scanner.Scan() {
 		line := scanner.Text()
 		line = strings.Split(line,"\t")[9]
+		// read info
+		// fmt.Println(strings.Split(line,"\t")[9])
+		if !StringInSlice(line, reads) {
+			read := InitDNARead([]byte(line))
+			reads = append(reads, *read)
+		}
+    }
+    return reads
+}
+
+// read REFINED unmapped reads
+func ReadSequence1(file string) []DNARead{
+	reads := make([]DNARead,0)
+	// Open the file.
+    f, _ := os.Open(file)
+    // Create a new Scanner for the file.
+    scanner := bufio.NewScanner(f)
+    // Loop over all lines in the file and print them.
+    for scanner.Scan() {
+		line := scanner.Text()
+		// line = strings.Split(line,"\t")[9]
 		// read info
 		// fmt.Println(strings.Split(line,"\t")[9])
 		if !StringInSlice(line, reads) {
@@ -100,8 +124,23 @@ func StringInSlice(read string, reads []DNARead) bool {
 		}
  }
 
-// Overlapp
- func OverlappString(a, b string) int {
+ // Write DNAreads into a file
+func WriteDNAreads(lines []DNARead, path string) error {
+	file, err := os.Create(path)
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+
+	w := bufio.NewWriter(file)
+	for _, line := range lines {
+		fmt.Fprintln(w, string(line.data))
+	}
+	return w.Flush()
+}
+
+// ExactOverlapp
+ func ExactOverlapString(a, b string) int {
  	maxOverlap := Min(len(a)-1, len(b)-1)
 
  	if len(b)>len(a) {
@@ -181,14 +220,149 @@ func Min3(a, b, c int) int {
 	return c
 }
 
+// Count the number of bits that are different
+func BitsDifference(h1, h2 *[sha256.Size]byte) int {
+    n := 0
+    for i := range h1 {
+        for b := h1[i] ^ h2[i]; b != 0; b &= b - 1 {
+            n++
+        }
+    }
+    return n
+}
+
+// Hamming distance
+func ComputeHammingDistance(str1, str2 string) int {
+	c := 0
+	for i := range str1 {
+		if str1[i] != str2[i]{
+			c++
+		}
+	}
+	return c
+}
+
+func ApproximateHamming(str1, str2 string) int {
+	return len(str1) - ComputeHammingDistance(str1, str2)
+}
+
+func ApproximateLevenshtein(str1, str2 string) int {
+	return len(str1) - ComputeLevenshteinDistance(str1, str2)
+}
+
+// Approximate overlaps on Hamming
+func ApproximateHammingOverlap(a, b string) int {
+
+	maxOverlap := Min(len(a)-1, len(b)-1)
+	appr := 0
+
+ 	if len(b)>len(a) {
+ 		SwapString(&a,&b)
+ 	}
+
+  	// Start with maximum possible overlap and work down until a max is found
+ 	for (maxOverlap>0) {
+ 		// fmt.Println(a[len(a)-maxOverlap:])
+ 		// fmt.Println(b[0:maxOverlap])
+		// fmt.Println(b[len(b)-maxOverlap:])
+		// fmt.Println(a[0:maxOverlap])
+		// fmt.Println("-----")
+
+ 		right := ApproximateHamming(a[len(a)-maxOverlap:], b[0:maxOverlap])
+ 		left := ApproximateHamming(b[len(b)-maxOverlap:], a[0:maxOverlap]) 		
+
+		// fmt.Println(right, left)
+
+ 		if  right > appr {
+ 			appr = right
+ 		}
+ 		
+ 		if  left > appr {
+ 			appr = left
+ 		}
+ 		
+ 		maxOverlap -= 1
+ 		if maxOverlap < appr {
+ 			break
+ 		}
+ 	}
+ 	return appr	
+}
+
+// Aproximate overlaps on Levenshtein
+func ApproximateLevenshteinOverlap(a, b string) int {
+	maxOverlap := Min(len(a)-1, len(b)-1)
+	appr := 0
+
+ 	if len(b)>len(a) {
+ 		SwapString(&a,&b)
+ 	}
+
+ 	// Start with maximum possible overlap and work down until a max is found
+ 	for (maxOverlap>0) {
+		// fmt.Println(a[len(a)-maxOverlap:])
+		// fmt.Println(b[0:maxOverlap])
+		// fmt.Println(b[len(b)-maxOverlap:])
+		// fmt.Println(a[0:maxOverlap])
+		// fmt.Println("-----")
+
+ 		right := ApproximateLevenshtein(a[len(a)-maxOverlap:], b[0:maxOverlap])
+ 		left := ApproximateLevenshtein(b[len(b)-maxOverlap:], a[0:maxOverlap])
+
+		// fmt.Println(right, left)
+
+ 		if  right > appr {
+ 			appr = right
+ 		}
+ 		
+ 		if  left > appr {
+ 			appr = left
+ 		}
+
+ 		maxOverlap -= 1
+ 		if maxOverlap < appr {
+ 			break
+ 		}
+ 	}
+ 	return appr	
+}
+
+// opt==1: exact overlap
+// opt==2: hamming distance overlap
+// opt==3: edit distance overlap
+func Condition(str1, str2 string, opt int, threshold int) bool {
+	switch opt {
+		case 1: {
+			return (ExactOverlapString(str1,str2)>threshold || 
+			ExactOverlapString(str1,string(ReverseComplement([]byte(str2))))>threshold || 
+			ExactOverlapString(string(ReverseComplement([]byte(str1))),str2)>threshold)
+		}
+		case 2: {
+			return (ApproximateHammingOverlap(str1,str2)>threshold || 
+			ApproximateHammingOverlap(str1,string(ReverseComplement([]byte(str2))))>threshold || 
+			ApproximateHammingOverlap(string(ReverseComplement([]byte(str1))),str2)>threshold) 
+		}
+		case 3: {
+			return (ApproximateLevenshteinOverlap(str1,str2)>threshold || 
+			ApproximateLevenshteinOverlap(str1,string(ReverseComplement([]byte(str2))))>threshold || 
+			ApproximateLevenshteinOverlap(string(ReverseComplement([]byte(str1))),str2)>threshold)
+		}
+	}
+	return false
+}
+
 
 // main
 func main() {
 	log.Printf("START!!! \n")
-	log.Printf("go run OverlapComponent.go -q <unmapped reads>")
+	log.Printf("go run OverlapComponent.go -qf <unmapped reads> -sr <distance selector> -ot <threshold>")
 
-	var queries_file = flag.String("q", "", "queries file")
+	var queries_file = flag.String("qf", "", "queries file")
+	var selector = flag.Int("sr", 1, "measuring distance selector")
+	var overlap_threshold = flag.Int("ot", 1, "overlap two substring threshold")
+
 	flag.Parse()
+	//fmt.Println(*queries_file)
 
 	//s1 := "AAAACBC"
 	//s2 := "BCEAAA"
@@ -197,22 +371,36 @@ func main() {
 	//fmt.Println(LevenshteinDistance(s1, s2))
 	//fmt.Println((ComputeEditDistance(s1,s2,len(s1)-1,len(s2)-1)))
 
-
-	//fmt.Println(*queries_file)
 	if *queries_file != "" {
-		DNAreads := ReadSequence(*queries_file)
 
+		// DNAreads := ReadSequence(*queries_file)
+		// DNA reads refined
+		DNAreads := ReadSequence1(*queries_file)
+
+		// if err := WriteDNAreads(DNAreads, "DNAreads.txt"); err != nil {
+		// 	log.Fatalf("writeLines: %s", err)
+		// }
+
+		// PrintDNAreads(DNAreads)
+		// fmt.Println(len(DNAreads))
+
+		th := *overlap_threshold
+		var uf *unionfind.UnionFind
+		uf = unionfind.New(len(DNAreads))		
+		
 		for i:=0; i<len(DNAreads); i++ {
-			for j:=i+1; j<len(DNAreads); j++  {
-				if OverlappString(string(DNAreads[i].data),string(DNAreads[j].data))>7 ||
-				OverlappString(string(DNAreads[i].data),string(ReverseComplement(DNAreads[j].data)))>7 || 
-				OverlappString(string(ReverseComplement(DNAreads[i].data)),string(DNAreads[j].data))>7 {
-					fmt.Println(i, j)
+			for j:=i+1; j<len(DNAreads); j++  {				
+				// if Condition(string(DNAreads[i].data),string(DNAreads[j].data), *selector, *overlap_threshold) {
+				if Condition(string(DNAreads[i].data),string(DNAreads[j].data), *selector, th) {
+					//fmt.Println(i, j)
+					uf.Union(i,j)						
 				}
 			}
 		}
 
-		// PrintDNAreads(DNAreads)
-		
-	}	
+		// fmt.Println(uf.GetNumClusters())
+		uf.PrintClusters()
+		// PrintDNAreads(DNAreads)					
+				
+	}		
 }
