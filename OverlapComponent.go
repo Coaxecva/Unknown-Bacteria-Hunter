@@ -242,12 +242,12 @@ func ComputeHammingDistance(str1, str2 string) int {
 	return c
 }
 
-func ApproximateHamming(str1, str2 string) int {
-	return len(str1) - ComputeHammingDistance(str1, str2)
+func ApproximateHamming(overlap int, str1, str2 string) int {
+	return overlap - ComputeHammingDistance(str1, str2)
 }
 
-func ApproximateLevenshtein(str1, str2 string) int {
-	return len(str1) - ComputeLevenshteinDistance(str1, str2)
+func ApproximateLevenshtein(overlap int, str1, str2 string) int {
+	return overlap - ComputeLevenshteinDistance(str1, str2)
 }
 
 // Approximate overlaps on Hamming
@@ -268,8 +268,8 @@ func ApproximateHammingOverlap(a, b string) int {
 		// fmt.Println(a[0:maxOverlap])
 		// fmt.Println("-----")
 
- 		right := ApproximateHamming(a[len(a)-maxOverlap:], b[0:maxOverlap])
- 		left := ApproximateHamming(b[len(b)-maxOverlap:], a[0:maxOverlap]) 		
+ 		right := ApproximateHamming(maxOverlap, a[len(a)-maxOverlap:], b[0:maxOverlap])
+ 		left := ApproximateHamming(maxOverlap, b[len(b)-maxOverlap:], a[0:maxOverlap]) 		
 
 		// fmt.Println(right, left)
 
@@ -306,8 +306,8 @@ func ApproximateLevenshteinOverlap(a, b string) int {
 		// fmt.Println(a[0:maxOverlap])
 		// fmt.Println("-----")
 
- 		right := ApproximateLevenshtein(a[len(a)-maxOverlap:], b[0:maxOverlap])
- 		left := ApproximateLevenshtein(b[len(b)-maxOverlap:], a[0:maxOverlap])
+ 		right := ApproximateLevenshtein(maxOverlap, a[len(a)-maxOverlap:], b[0:maxOverlap])
+ 		left := ApproximateLevenshtein(maxOverlap, b[len(b)-maxOverlap:], a[0:maxOverlap])
 
 		// fmt.Println(right, left)
 
@@ -331,21 +331,23 @@ func ApproximateLevenshteinOverlap(a, b string) int {
 // opt==2: hamming distance overlap
 // opt==3: edit distance overlap
 func Condition(str1, str2 string, opt int, threshold int) bool {
+	first_rev := string(ReverseComplement([]byte(str1)))
+	second_rev := string(ReverseComplement([]byte(str2)))
 	switch opt {
 		case 1: {
 			return (ExactOverlapString(str1,str2)>threshold || 
-			ExactOverlapString(str1,string(ReverseComplement([]byte(str2))))>threshold || 
-			ExactOverlapString(string(ReverseComplement([]byte(str1))),str2)>threshold)
+			ExactOverlapString(str1, second_rev)>threshold || 
+			ExactOverlapString(first_rev,str2)>threshold)
 		}
 		case 2: {
 			return (ApproximateHammingOverlap(str1,str2)>threshold || 
-			ApproximateHammingOverlap(str1,string(ReverseComplement([]byte(str2))))>threshold || 
-			ApproximateHammingOverlap(string(ReverseComplement([]byte(str1))),str2)>threshold) 
+			ApproximateHammingOverlap(str1, second_rev)>threshold || 
+			ApproximateHammingOverlap(first_rev,str2)>threshold) 
 		}
 		case 3: {
 			return (ApproximateLevenshteinOverlap(str1,str2)>threshold || 
-			ApproximateLevenshteinOverlap(str1,string(ReverseComplement([]byte(str2))))>threshold || 
-			ApproximateLevenshteinOverlap(string(ReverseComplement([]byte(str1))),str2)>threshold)
+			ApproximateLevenshteinOverlap(str1, second_rev)>threshold || 
+			ApproximateLevenshteinOverlap(first_rev,str2)>threshold)
 		}
 	}
 	return false
