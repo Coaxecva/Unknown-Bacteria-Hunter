@@ -1,0 +1,53 @@
+predict:  predic_clusters_2_95.txt
+groundtruth:  correct_clusters.txt
+Mutual info score:  0.550564286582
+Rand Index:  0.6466322819242845
+22
+0.0
+	 reference=006FI012_Sphingomonassp._HOT_006_Clone_FI012_GB_AY349411_Phylotype_X_0 1
+0.0
+	 reference=006FI012_Sphingomonassp._HOT_006_Clone_FI012_GB_AY349411_Phylotype_X_0 2
+0.0
+	 reference=093_1213_Clostridiales[F-1][G-1]sp._HOT_093_Clone_MCE7_107_GB_AF481213_Phylotype_X_3 1
+0.0
+	 reference=006FI012_Sphingomonassp._HOT_006_Clone_FI012_GB_AY349411_Phylotype_X_0 7
+0.0
+	 reference=093_1213_Clostridiales[F-1][G-1]sp._HOT_093_Clone_MCE7_107_GB_AF481213_Phylotype_X_3 1
+0.0
+	 reference=037AY088_Stenotrophomonasnitritireducens_HOT_037_Clone_AY088_GB_AF385546_Named_X_1 1
+0.9182958340544896
+	 reference=037AY088_Stenotrophomonasnitritireducens_HOT_037_Clone_AY088_GB_AF385546_Named_X_1 2
+	 reference=006FI012_Sphingomonassp._HOT_006_Clone_FI012_GB_AY349411_Phylotype_X_0 1
+0.0
+	 reference=037AY088_Stenotrophomonasnitritireducens_HOT_037_Clone_AY088_GB_AF385546_Named_X_1 4
+0.0
+	 reference=249_C053_Treponemasp._HOT_249_Clone__C053_GB_AF023037_Phylotype_X_0 3
+0.0
+	 reference=093_1213_Clostridiales[F-1][G-1]sp._HOT_093_Clone_MCE7_107_GB_AF481213_Phylotype_X_3 1
+0.0
+	 reference=122_6527_Megasphaeramicronuciformis_HOT_122_Clone_16sps19-3e12.p1k_GB_FM996527_Named_G_5 1
+0.0
+	 reference=093_1213_Clostridiales[F-1][G-1]sp._HOT_093_Clone_MCE7_107_GB_AF481213_Phylotype_X_3 1
+0.0
+	 reference=093_1213_Clostridiales[F-1][G-1]sp._HOT_093_Clone_MCE7_107_GB_AF481213_Phylotype_X_3 1
+0.0
+	 reference=213DA069_Leptotrichiahongkongensis_HOT_213_Clone_DA069_GB_AF287811_Named_X_5 1
+0.0
+	 reference=122_6527_Megasphaeramicronuciformis_HOT_122_Clone_16sps19-3e12.p1k_GB_FM996527_Named_G_5 1
+0.0
+	 reference=249_C053_Treponemasp._HOT_249_Clone__C053_GB_AF023037_Phylotype_X_0 1
+0.0
+	 reference=213DA069_Leptotrichiahongkongensis_HOT_213_Clone_DA069_GB_AF287811_Named_X_5 1
+0.0
+	 reference=249_C053_Treponemasp._HOT_249_Clone__C053_GB_AF023037_Phylotype_X_0 16
+0.0
+	 reference=006FI012_Sphingomonassp._HOT_006_Clone_FI012_GB_AY349411_Phylotype_X_0 1
+0.512211964183703
+	 reference=037AY088_Stenotrophomonasnitritireducens_HOT_037_Clone_AY088_GB_AF385546_Named_X_1 13
+	 reference=006FI012_Sphingomonassp._HOT_006_Clone_FI012_GB_AY349411_Phylotype_X_0 12
+	 reference=078F263a_Oribacteriumsp._HOT_078_Strain_F0263a_GB_tbd_Unnamed_G_4 1
+	 reference=093_1213_Clostridiales[F-1][G-1]sp._HOT_093_Clone_MCE7_107_GB_AF481213_Phylotype_X_3 287
+0.0
+	 reference=093_1213_Clostridiales[F-1][G-1]sp._HOT_093_Clone_MCE7_107_GB_AF481213_Phylotype_X_3 1
+0.0
+	 reference=006FI012_Sphingomonassp._HOT_006_Clone_FI012_GB_AY349411_Phylotype_X_0 1
