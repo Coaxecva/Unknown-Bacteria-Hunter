@@ -1,0 +1,21 @@
+predict:  predic_clusters_2_70.txt
+groundtruth:  correct_clusters.txt
+Mutual info score:  0.00236753442308
+Rand Index:  0.0008338092105814914
+2
+0.0
+	 reference=356_I025_TM7[G-5]sp._HOT_356_Clone__I025_GB_AF125206_Phylotype_X_0 1
+2.6140914810676366
+	 reference=274_8173_Bacteroidales[G-2]sp._HOT_274_Clone_071040_120_GB_JQ468173_Unnamed_G_5 266
+	 reference=271_C025_Treponemasp._HOT_271_Clone__C025_GB_AF023043_Phylotype_X_1 140
+	 reference=272_X083_Bacteroidaceae[G-1]sp._HOT_272_Clone__X083_GB_AY005066_Unnamed_G_2 269
+	 reference=274AU126_Bacteroidales[G-2]sp._HOT_274_Clone_AU126_GB_AY005072_Unnamed_G_5 252
+	 reference=393_7059_Parvimonassp._HOT_393_Strain_P4P_31_GB_AY207059_Unnamed_G_4 3
+	 reference=468_8486_Bacillussubtilis_HOT_468_Strain_ATCC6633_GB_AB018486_Named_G_0 56
+	 reference=273BB134_Porphyromonasendodontalis_HOT_273_Clone_BB134_GB_AY005068_Named_G_5 4
+	 reference=530_5256_Propionibacteriumacnes_HOT_530_Strain_63597_GB_AF145256_Named_G_4 5
+	 reference=273_7054_Porphyromonasendodontalis_HOT_273_Clone_P2PB_52_GB_AY207054_Named_G_5 1
+	 reference=356_I025_TM7[G-5]sp._HOT_356_Clone__I025_GB_AF125206_Phylotype_X_0 1
+	 reference=366_1208_Ruminococcaceae[G-3]sp._HOT_366_Clone_MCE3_9_GB_AF481208_Phylotype_X_1 95
+	 reference=588_6183_Bifidobacteriumdentium_HOT_588_Strain_ATCC27534_GB_D86183_Named_G_1 23
+	 reference=273_6491_Porphyromonasendodontalis_HOT_273_Strain_ATCC35406_GB_L16491_Named_G_5 4
