@@ -2,6 +2,7 @@ import random, sys, string
 import pandas as pd
 import math
 from collections import Counter
+import numpy as np
 
 def ShuffleArray(fname):
 	with open(fname) as f:
@@ -76,6 +77,7 @@ if __name__ == '__main__':
 	df = pd.DataFrame({ 'groundtruth': content, 
 							'predict': arr })
 
+	en_arr = []
 	for label in unique_val:
 		#print(label)
 		#print(df[df['predict']==label])
@@ -83,5 +85,9 @@ if __name__ == '__main__':
 		en, ok = eta(group, "shannon")
 		if ok != -1:
 			print(en)
-			for key, value in ok.items():
-				print("\t", key, value)
+			en_arr.append(en)
+			#for key, value in ok.items():
+			#	print("\t", key, value)
+
+	print(np.average(en_arr))
+	print(np.median(en_arr))
