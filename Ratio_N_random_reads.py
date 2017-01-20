@@ -27,6 +27,28 @@ def ShuffleArray1(fname, c):
 	random.shuffle(arr)
 	return arr
 
+def eta(data, unit='natural'):
+	base = { 'shannon' : 2.,
+			'natural' : math.exp(1),
+			'hartley' : 10. }
+	if len(data) < 1:
+		return 0, -1
+
+	counts = Counter()
+	for d in data:
+		counts[d] += 1
+
+	probs = [float(c) / len(data) for c in counts.values()]
+	probs = [p for p in probs if p > 0.]
+	ent = 0
+
+	for p in probs:
+		if p > 0.:
+			ent -= p * math.log(p, base[unit])
+	
+	return ent, counts
+
+
 if __name__ == '__main__':
 
 	#read_f = sys.argv[1]
@@ -34,9 +56,15 @@ if __name__ == '__main__':
 	#print(arr)
 	#print(len(arr))
 
-	fname = sys.argv[1]
+	fname = sys.argv[1]  # correct clusters
 	num_unknown = sys.argv[2]
 
+	# shuffle array
 	arr = ShuffleArray1(fname, int(num_unknown))
-	print(arr)
+	#print(arr)
 	
+	with open(fname) as f:
+		content = [line.rstrip() for line in f]
+
+	unique_val = set(content)
+	print(len(unique_val))
