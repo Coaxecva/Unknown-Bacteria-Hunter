@@ -1,4 +1,7 @@
 import random, sys, string
+import pandas as pd
+import math
+from collections import Counter
 
 def ShuffleArray(fname):
 	with open(fname) as f:
@@ -66,5 +69,19 @@ if __name__ == '__main__':
 	with open(fname) as f:
 		content = [line.rstrip() for line in f]
 
-	unique_val = set(content)
-	print(len(unique_val))
+	# Compute entropy
+	unique_val = set(arr)
+	#print(len(unique_val))
+
+	df = pd.DataFrame({ 'groundtruth': content, 
+							'predict': arr })
+
+	for label in unique_val:
+		#print(label)
+		#print(df[df['predict']==label])
+		group = list(df[df['predict']==label]['groundtruth'])
+		en, ok = eta(group, "shannon")
+		if ok != -1:
+			print(en)
+			for key, value in ok.items():
+				print("\t", key, value)
