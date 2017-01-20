@@ -1,9 +1,11 @@
 import sys
-from sklearn.metrics.cluster import adjusted_mutual_info_score, adjusted_rand_score
+from sklearn.metrics.cluster import adjusted_mutual_info_score, adjusted_rand_score, homogeneity_score, completeness_score
+from sklearn.metrics import jaccard_similarity_score
 
 import math
 from collections import Counter
 import pandas as pd
+import numpy as np
 
 def eta(data, unit='natural'):
 	base = { 'shannon' : 2.,
@@ -56,6 +58,7 @@ if __name__ == '__main__':
 		df = pd.DataFrame({ 'groundtruth': content1, 
 							'predict': content })
 
+		en_arr = []
 		for label in unique_val:
 			#print(label)
 			#print(df[df['predict']==label])
@@ -63,9 +66,12 @@ if __name__ == '__main__':
 			en, ok = eta(group, "shannon")
 			if ok != -1:
 				print(en)
+				en_arr.append(en)
 				for key, value in ok.items():
 					print("\t", key, value)
 				#print(en, "\t", ok)
+			print(np.average(en_arr))
+			print(np.median(en_arr))
 
 	else:
 		print("Lengths of two groups are not equal!!!")
