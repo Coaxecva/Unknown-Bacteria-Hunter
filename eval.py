@@ -44,6 +44,10 @@ if __name__ == '__main__':
 	if len(content1)==len(content):		
 		print("Mutual info score: ", adjusted_mutual_info_score(content1, content))
 		print("Rand Index: ", adjusted_rand_score(content1, content))
+		print("Homogeneity Score: ", homogeneity_score(content1, content))
+		print("Completeness Score: ", completeness_score(content1, content))
+		print("Jaccard Similarity Score: ", jaccard_similarity_score(content1, content))
+
 
 		unique_val = set(content)
 		print(len(unique_val))
