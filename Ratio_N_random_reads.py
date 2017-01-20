@@ -15,9 +15,16 @@ def ShuffleArray1(fname, c):
 	#print(num_lines)
 	#print(num_lines/c)
 	arr = []
+
 	for i in range(c):
-		for j in range(num_lines/c)
-			arr.append(i)			
+		for j in range(num_lines//c):
+			arr.append(i)	
+
+	for j in range(num_lines - len(arr)):
+		arr.append(i)
+
+	# shuffle labels
+	random.shuffle(arr)
 	return arr
 
 if __name__ == '__main__':
