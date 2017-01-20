@@ -9,8 +9,8 @@ def eta(data, unit='natural'):
 	base = { 'shannon' : 2.,
 			'natural' : math.exp(1),
 			'hartley' : 10. }
-	if len(data) <= 1:
-		return 0
+	if len(data) < 1:
+		return 0, -1
 
 	counts = Counter()
 	for d in data:
@@ -24,7 +24,7 @@ def eta(data, unit='natural'):
 		if p > 0.:
 			ent -= p * math.log(p, base[unit])
 	
-	return ent
+	return ent, counts
 
 
 if __name__ == '__main__':
@@ -41,11 +41,13 @@ if __name__ == '__main__':
 	with open(groundtruth) as f:
 		content1 = [line.rstrip() for line in f]
 
-	if len(content1)==len(content):
+	if len(content1)==len(content):		
 		print("Mutual info score: ", adjusted_mutual_info_score(content1, content))
 		print("Rand Index: ", adjusted_rand_score(content1, content))
 
 		unique_val = set(content)
+		print(len(unique_val))
+		#print(unique_val)
 		
 		df = pd.DataFrame({ 'groundtruth': content1, 
 							'predict': content })
@@ -54,7 +56,12 @@ if __name__ == '__main__':
 			#print(label)
 			#print(df[df['predict']==label])
 			group = list(df[df['predict']==label]['groundtruth'])
-			print("Group: ", label, eta(group))			
+			en, ok = eta(group, "shannon")
+			if ok != -1:
+				print(en)
+				for key, value in ok.items():
+					print("\t", key, value)
+				#print(en, "\t", ok)
 
 	else:
 		print("Lengths of two groups are not equal!!!")
