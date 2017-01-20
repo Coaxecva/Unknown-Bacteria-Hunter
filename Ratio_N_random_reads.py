@@ -13,7 +13,12 @@ def ShuffleArray1(fname, c):
 	# fname of corrected clusters
 	num_lines = sum(1 for line in open(fname))
 	#print(num_lines)
-	print(num_lines/c)
+	#print(num_lines/c)
+	arr = []
+	for i in range(c):
+		for j in range(num_lines/c)
+			arr.append(i)			
+	return arr
 
 if __name__ == '__main__':
 
@@ -24,7 +29,7 @@ if __name__ == '__main__':
 
 	fname = sys.argv[1]
 	num_unknown = sys.argv[2]
-	ShuffleArray1(fname, int(num_unknown))
 
-
+	arr = ShuffleArray1(fname, int(num_unknown))
+	print(arr)
 	
