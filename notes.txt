@@ -7,4 +7,4 @@ bowtie2 -x ../multigenome-bowtie2  reads_1pct_ds1_c30.fastq -S reads_1pct_ds1_c3
 samtools view -f 4  reads_1pct_ds1_c30.bowtie2.sam > reads_1pct_ds1_c30.bowtie2.unmapped.sam
 
 -ExtractGenomeID with correct reads and clusters
-
+ExtractGenomeID.py unknown_reads/unknown_1pct_ds1_c30.fastq reads/reads_1pct_ds1_c30.bowtie2.unmapped.sam
