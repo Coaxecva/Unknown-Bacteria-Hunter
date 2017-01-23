@@ -1,1 +1,10 @@
-https://www.diffchecker.com/10UGKrCA
+-Align reads by Bowtie2
+cat * > mutltigenomes.fa
+bowtie2-build mutltigenomes.fa ../mutltigenome-bowtie2
+bowtie2 -x ../multigenome-bowtie2  reads_1pct_ds1_c30.fastq -S reads_1pct_ds1_c30.bowtie2.sam
+
+-Samtools unmapped reads
+samtools view -f 4  reads_1pct_ds1_c30.bowtie2.sam > reads_1pct_ds1_c30.bowtie2.unmapped.sam
+
+-ExtractGenomeID with correct reads and clusters
+
