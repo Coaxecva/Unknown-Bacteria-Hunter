@@ -4,6 +4,9 @@ import math
 from collections import Counter
 import numpy as np
 
+from sklearn.metrics.cluster import adjusted_mutual_info_score, adjusted_rand_score, homogeneity_score, completeness_score
+from sklearn.metrics import jaccard_similarity_score
+
 def ShuffleArray(fname):
 	with open(fname) as f:
 		content = [read.strip() for read in f]
@@ -70,6 +73,9 @@ if __name__ == '__main__':
 	with open(fname) as f:
 		content = [line.rstrip() for line in f]
 
+	print(adjusted_mutual_info_score(content, arr), "\t", adjusted_rand_score(content, arr),
+			"\t", homogeneity_score(content, arr), "\t", completeness_score(content, arr),
+			"\t", jaccard_similarity_score(content, arr))
 	# Compute entropy
 	unique_val = set(arr)
 	#print(len(unique_val))
