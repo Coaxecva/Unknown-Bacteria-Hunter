@@ -1,0 +1,68 @@
+>758_3928 | Streptococcus sanguinis | HOT_758 | Strain_ATCC 10556 | GB_AF003928 | Named | G | 6
+>948_7425 | Streptococcus lactarius | HOT_948 | Strain_MV1 | GB_NR_117425 | Named | X | 4
+>728_8314 | Streptococcus peroris | HOT_728 | Strain_GTC848 | GB_AB008314 | Named | G | 5
+>686_3965 | Streptococcus mutans | HOT_686 | Strain_NCTC 10449 | GB_AJ243965 | Named | G | 5
+>804_8837 | Lactococcus lactis | HOT_804 | Strain_ATCC 19435 | GB_M58837 | Named | G | 2
+>389_0541 | Abiotrophia defectiva | HOT_389 | Strain_ATCC 49176 | GB_D50541 | Named | G | 5
+>756_9108 | Lactobacillus salivarius | HOT_756 | Strain_ATCC 11741 | GB_AF089108 | Named | G | 2
+>839_3159 | Lactobacillus jensenii | HOT_839 | Strain_KC36b | GB_AF243159 | Named | G | 0
+>608_8819 | Lactobacillus fermentum | HOT_608 | Strain_ATCC 14931 | GB_M58819 | Named | G | 2
+>558_0328 | Lactobacillus brevis | HOT_558 | Strain_K9 | GB_AF090328 | Named | G | 0
+>825_0894 | Listeria monocytogenes | HOT_825 | Strain_R1653 | GB_EU090894 | Named | G | 1
+>093_1213 | Clostridiales [F-1][G-1] sp. | HOT_093 | Clone_MCE7_107 | GB_AF481213 | Phylotype | X | 3
+>100EI074 | Lachnospiraceae [G-3] sp. | HOT_100 | Clone_EI074 | GB_AF385573 | Phylotype | X | 4
+>373_1221 | Stomatobaculum sp. | HOT_373 | Clone_MCE9_173 | GB_AF481221 | Phylotype | X | 2
+>790EX153 | Peptoniphilaceae [G-2] sp. | HOT_790 | Clone_EX153 | GB_AY134899 | Phylotype | X | 1
+>662_4677 | Finegoldia magna | HOT_662 | Strain_ATCC 29328 | GB_NR_074677 | Named | G | 0
+>929W2294 | Peptoniphilaceae [G-3] sp. | HOT_929 | Strain_W2294 | GB_tbd | Unnamed | G | 1
+>375_1225 | Peptoniphilus sp. | HOT_375 | Strain_E3_32 | GB_AF481225 | Unnamed | G | 0
+>539_6962 | Filifactor alocis | HOT_539 | Strain_ATCC 35896 | GB_AJ006962 | Named | G | 4
+>091CK047 | Peptostreptococcaceae [XI][G-2] sp. | HOT_091 | Clone_CK047 | GB_AF287762 | Phylotype | X | 3
+>876F0540 | Clostridiales [F-3][G-1] sp. | HOT_876 | Strain_F0540 | GB_tbd | Unnamed | G | 0
+>935_8649 | Fastidiosipila sanguinis | HOT_935 | Clone_nck255g10c1 | GB_KF098649 | Named | X | 0
+>684_1878 | Mitsuokella multacida | HOT_684 | Strain_NCTC 10934 | GB_X81878 | Named | G | 0
+>501JI021 | Selenomonas sp. | HOT_501 | Clone_JI021 | GB_AY349409 | Phylotype | X | 1
+>484_4201 | Erysipelothrix tonsillarum | HOT_484 | Strain_NA | GB_AB034201 | Named | G | 0
+>569_3729 | Eggerthia catenaformis | HOT_569 | Strain_ATCC 25536 | GB_M23729 | Named | G | 3
+>221FP036 | Leptotrichia sp. | HOT_221 | Clone_FP036 | GB_AF432138 | Phylotype | X | 5
+>214DE081 | Leptotrichia shahii | HOT_214 | Clone_DE081 | GB_AF366268 | Named | G | 3
+>271_C025 | Treponema sp. | HOT_271 | Clone__C025 | GB_AF023043 | Phylotype | X | 1
+>927_9278 | Treponema sp. | HOT_927 | Clone_nbu415h07c1 | GB_GQ039278 | Phylotype | X | 0
+>805_8726 | Treponema pallidum | HOT_805 | Strain_Nichols | GB_M88726 | Named | G | 0
+>242AU076 | Treponema sp. | HOT_242 | Clone_AU076 | GB_AF182831 | Phylotype | X | 2
+>674_7148 | Atopobium minutum | HOT_674 | Strain_NCFB 2751 | GB_X67148 | Named | G | 1
+>192C3KA | Propionibacterium sp. | HOT_192 | Strain_C3KA | GB_GQ422728 | Unnamed | G | 0
+>832_9809 | Turicella otitidis | HOT_832 | Clone_nbw13b04c1 | GB_GQ059809 | Named | G | 1
+>189AW006 | Kocuria sp. | HOT_189 | Clone_AW006 | GB_AF385532 | Phylotype | X | 0
+>830_7625 | Mobiluncus mulieris | HOT_830 | Strain_CCUG 20071 | GB_AJ427625 | Named | G | 0
+>708_7295 | Actinomyces oricola | HOT_708 | Strain_CCUG 46090 | GB_AJ507295 | Named | X | 0
+>006FI012 | Sphingomonas sp. | HOT_006 | Clone_FI012 | GB_AY349411 | Phylotype | X | 0
+>612_4476 | Pseudomonas fluorescens | HOT_612 | Strain_ATCC 13525 | GB_NR_114476 | Named | G | 2
+>821_3483 | Haemophilus ducreyi | HOT_821 | Strain_ATCC 33921 | GB_AY513483 | Named | G | 0
+>571_7530 | Burkholderia cepacia | HOT_571 | Strain_ATCC 25416 | GB_AF097530 | Named | G | 0
+>028_5031 | Rhodocyclus sp. | HOT_028 | Strain_A08KA | GB_AY005031 | Unnamed | X | 0
+>717_3736 | Variovorax paradoxus | HOT_717 | Strain_NBRC 15149 | GB_NR_113736 | Named | G | 1
+>018_0511 | Neisseria sp. | HOT_018 | Clone_069082_036 | GB_JQ450511 | Phylotype | X | 4
+>649_9286 | Neisseria lactamica | HOT_649 | Strain_NCTC 10617 | GB_AJ239286 | Named | G | 2
+>351CW040 | TM7 [G-3] sp. | HOT_351 | Clone_CW040 | GB_AF385506 | Phylotype | X | 4
+>873_4Q04 | GN02 [G-2] sp. | HOT_873 | Clone_4Q04 | GB_JX294354 | Phylotype | X | 2
+>812_8157 | Helicobacter pylori | HOT_812 | Strain_ATCC 43504 | GB_M88157 | Named | G | 1
+>320AZ105 | Flavitalea sp. | HOT_320 | Clone_AZ105 | GB_AF385548 | Phylotype | X | 0
+>338Capn8 | Capnocytophaga sp. | HOT_338 | Strain_FDC 8 | GB_U41352 | Unnamed | G | 4
+>326F0382 | Capnocytophaga sp. | HOT_326 | Strain_F0382 | GB_tbd | Unnamed | G | 5
+>509_3619 | Bacteroidetes [G-4] sp. | HOT_509 | Clone_MB2_P04 | GB_DQ003619 | Phylotype | X | 0
+>899-Wade | Bacteroidetes [G-3] sp. | HOT_899 | Clone_BL234 | GB_JQ406536 | Phylotype | X | 0
+>516_3623 | Bacteroidetes [G-6] sp. | HOT_516 | Clone_MB3_P19 | GB_DQ003623 | Phylotype | X | 2
+>613_6495 | Tannerella forsythia | HOT_613 | Strain_FDC 338 | GB_L16495 | Named | G | 4
+>619_3964 | Porphyromonas gingivalis | HOT_619 | Strain_DSM 20709 | GB_X73964 | Named | G | 5
+>911-Wade | Bacteroidetes [G-7] sp. | HOT_911 | Clone_DL325 | GB_JQ406540 | Phylotype | X | 0
+>272_X083 | Bacteroidaceae [G-1] sp. | HOT_272 | Clone__X083 | GB_AY005066 | Unnamed | G | 2
+>304DA058 | Prevotella sp. | HOT_304 | Clone_DA058 | GB_AY005065 | Phylotype | X | 4
+>562_6476 | Prevotella buccalis | HOT_562 | Strain_ATCC 35310 | GB_L16476 | Named | G | 0
+>794_0414 | Prevotella multisaccharivorax | HOT_794 | Strain_JCM 12954 | GB_AB200414 | Named | G | 1
+>556_6475 | Prevotella bivia | HOT_556 | Strain_ATCC 29303 | GB_L16475 | Named | G | 2
+>307_8826 | Prevotella salivae | HOT_307 | Strain_DSM 15606 | GB_AB108826 | Named | G | 5
+>714_3121 | Prevotella pallens | HOT_714 | Strain_JCM 11140 | GB_NR_113121 | Named | G | 5
+>396_7050 | Prevotella sp. | HOT_396 | Clone_P4PB_83 | GB_AY207050 | Phylotype | X | 4
+>885_3253 | Prevotella scopos | HOT_885 | Strain_JCM 17725 | GB_AB683253 | Named | G | 4
+>298BE073 | Prevotella histicola | HOT_298 | Clone_BE073 | GB_AF385551 | Named | G | 6
