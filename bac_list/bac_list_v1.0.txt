@@ -1,0 +1,55 @@
+074-T4E3 | Streptococcus sp. | HOT_074 | Strain_T4-E3 | GB_AF385526 | Lost | X | 5
+758_3928 | Streptococcus sanguinis | HOT_758 | Strain_ATCC 10556 | GB_AF003928 | Named | G | 6
+071_8631 | Streptococcus tigurinus | HOT_071 | Clone_C3ALM006 | GB_AY278631 | Named | G | 6
+411_8635 | Streptococcus parasanguinis II | HOT_411 | Clone_C5AKM109 | GB_AY278635 | Named | G | 6
+948_7425 | Streptococcus lactarius | HOT_948 | Strain_MV1 | GB_NR_117425 | Named | X | 4
+398_7051 | Streptococcus dentisani | HOT_398 | Clone_P2PA_41 | GB_AY207051 | Named | G | 6
+767_2856 | Streptococcus sinensis | HOT_767 | Strain_HKU4 | GB_AF432856 | Named | G | 3
+804_8837 | Lactococcus lactis | HOT_804 | Strain_ATCC 19435 | GB_M58837 | Named | G | 2
+596_5408 | Granulicatella elegans | HOT_596 | Strain_2640-91 | GB_Y15408 | Named | G | 5
+813_6959 | Dolosigranulum pigrum | HOT_813 | Clone_BF0002A144 | GB_AM696959 | Named | G | 1
+461HT070 | Lactobacillus ultunensis | HOT_461 | Clone_HT070 | GB_AY349383 | Named | X | 1
+882_4230 | Lactobacillus panis | HOT_882 | Strain_DSM 6035 | GB_X94230 | Named | G | 2
+881_5055 | Lactobacillus buchneri | HOT_881 | Strain_JCM 1115 | GB_AB205055 | Named | G | 0
+921-Wade | Paenibacillus glucanolyticus | HOT_921 | Strain_W10507 | GB_tbd | Unnamed | G | 0
+046_4327 | Gemella morbillorum | HOT_046 | Strain_ATCC 27824 | GB_L14327 | Named | G | 5
+635_7152 | Johnsonella ignava | HOT_635 | Strain_ATCC 51276 | GB_X87152 | Named | G | 4
+934FTB41 | Oribacterium parvum | HOT_934 | Strain_FTB41 | GB_AF287770 | Named | G | 4
+165EZ006 | Catonella morbi | HOT_165 | Clone_EZ006 | GB_AF385577 | Named | G | 5
+934_5570 | Oribacterium parvum | HOT_934 | Strain_ACB1 | GB_NR_125570 | Named | G | 4
+788F0127 | Anaerococcus tetradius | HOT_788 | Strain_F0127 | GB_GQ422749 | Named | G | 0
+836F0141 | Peptoniphilus lacrimalis | HOT_836 | Strain_F0141 | GB_GQ422750 | Unnamed | G | 2
+542_6462 | Peptostreptococcus anaerobius | HOT_542 | Strain_NCTC 11460 | GB_AY326462 | Named | G | 2
+593_7874 | Mogibacterium diversum | HOT_593 | Strain_ATCC 700923 | GB_AB037874 | Named | X | 5
+402_7065 | Clostridiales [F-1][G-2] sp. | HOT_402 | Clone_P4PA_66 | GB_AY207065 | Phylotype | X | 0
+085BU014 | Ruminococcaceae [G-2] sp. | HOT_085 | Clone_BU014 | GB_AF385563 | Phylotype | X | 4
+118GBA27 | Dialister invisus | HOT_118 | Strain_GBA27 | GB_AF287788 | Named | G | 5
+123_9314 | Megasphaera sp. | HOT_123 | Clone_ELU0026-000399 | GB_HQ749314 | Phylotype | X | 3
+161AA050 | Veillonella parvula | HOT_161 | Clone_AA050 | GB_AF287782 | Named | G | 5
+150_7052 | Veillonellaceae [G-1] sp. | HOT_150 | Clone_P2PA_80 | GB_AY207052 | Phylotype | X | 3
+151Ssput | Selenomonas sputigena | HOT_151 | Strain_ATCC 35185 | GB_AF287793 | Named | G | 4
+124F0399 | Selenomonas artemidis | HOT_124 | Strain_F0399 | GB_HM596274 | Named | G | 4
+136_3497 | Selenomonas sp. | HOT_136 | Clone_ncd2234b08c1 | GB_JF193497 | Unnamed | G | 4
+125AH132 | Selenomonas flueggei | HOT_125 | Clone_AH132 | GB_AF287804 | Named | G | 4
+905-Wade | Erysipelotrichaceae [G-1] sp. | HOT_905 | Clone_DL151 | GB_JQ406538 | Phylotype | X | 4
+606_5590 | Mycoplasma faucium | HOT_606 | Strain_DC333 | GB_AF125590 | Named | X | 3
+200AJ050 | Fusobacterium nucleatum subsp. vincentii | HOT_200 | Clone_AJ050 | GB_AF287805 | Named | G | 6
+837_8342 | Sneathia sanguinegens | HOT_837 | Strain_CCUG 41628 | GB_NR_118342 | Named | G | 2
+222_7816 | Leptotrichia wadei | HOT_222 | Strain_A39FD | GB_AF287816 | Named | G | 5
+357W5455 | Pyramidobacter piscolens | HOT_357 | Strain_W5455 | GB_EU309492 | Named | G | 2
+664_C021 | Treponema maltophilum | HOT_664 | Clone__C021 | GB_AF023038 | Named | G | 4
+805_8726 | Treponema pallidum | HOT_805 | Strain_Nichols | GB_M88726 | Named | G | 0
+584_1236 | Treponema denticola | HOT_584 | Strain_ATCC 33520 | GB_M71236 | Named | G | 5
+667_3051 | Treponema medium | HOT_667 | Clone__C007 | GB_AF023051 | Named | G | 3
+602_1240 | Slackia exigua | HOT_602 | Strain_ATCC 700122 | GB_AF101240 | Named | G | 3
+809F0206 | Olsenella sp. | HOT_809 | Strain_F0206 | GB_EU592965 | Unnamed | G | 1
+895_0136 | Bifidobacterium animalis subsp. lactis | HOT_895 | Strain_DSM 10140 | GB_AB050136 | Named | G | 0
+191FMA5B | Propionibacterium acidifaciens | HOT_191 | Strain_FMA5 | GB_AF287756 | Named | G | 3
+595F235b | Corynebacterium durum | HOT_595 | Strain_F0235b | GB_tbd | Named | G | 5
+180H1083 | Actinomyces sp. | HOT_180 | Strain_Hal-1083 | GB_AF385522 | Unnamed | G | 5
+893_5935 | Actinomyces oris | HOT_893 | Strain_JCM 16131 | GB_AB545935 | Named | G | 5
+605_1630 | Desulfovibrio fairfieldensis | HOT_605 | Strain_DSM 12803 | GB_AJ251630 | Named | G | 0
+747_5837 | Erythromicrobium ramosum | HOT_747 | Strain_DSM 8510 | GB_AF465837 | Named | X | 1
+676_8582 | Proteus mirabilis | HOT_676 | Strain_ATCC 29906 | GB_AF008582 | Named | G | 0
+279F450d | Porphyromonas sp. | HOT_279 | Strain_F0450d | GB_tbd | Unnamed | G | 6
+572_4079 | Prevotella veroralis | HOT_572 | Clone_071062_262 | GB_JQ474079 | Named | G | 5
