@@ -11,3 +11,8 @@ ExtractGenomeID.py unknown_reads/unknown_1pct_ds1_c30.fastq reads/reads_1pct_ds1
 
 -Overlap Assignment
 go run ~/Documents/Metagenomics/src/OverlapComponent.go -qf correct_reads_c40.txt -sr 2 -ot 100 > pc2_100.txt
+
+To do:
+-Optimize parameters
+-Coverage affects accuracy?
+-# of unknowns affects accuracy?
