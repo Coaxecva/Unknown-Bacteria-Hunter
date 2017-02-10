@@ -254,9 +254,10 @@ func ApproximateLevenshtein(overlap int, str1, str2 string) int {
 func ApproximateHammingOverlap(a, b string) int {
 
 	maxOverlap := Min(len(a)-1, len(b)-1)
+	mlen := maxOverlap
 	appr := 0
 
-	println(maxOverlap)
+	//println(maxOverlap)
 
 	//println(a, " ", len(a))
 	//println(b, " ", len(b))
@@ -291,8 +292,12 @@ func ApproximateHammingOverlap(a, b string) int {
  		if maxOverlap < appr {
  			break
  		}
+
+ 		if maxOverlap < 10 {
+ 			break
+ 		}
  	}
- 	pct := appr/maxOverlap;
+ 	pct := float64(appr)/float64(mlen);
  	fmt.Println(pct)
  	//fmt.Println(appr, " ", maxOverlap)
  	return appr	
