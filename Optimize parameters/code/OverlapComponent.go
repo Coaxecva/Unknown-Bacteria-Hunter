@@ -254,6 +254,54 @@ func ApproximateLevenshtein(overlap int, str1, str2 string) int {
 func ApproximateHammingOverlap(a, b string) int {
 
 	maxOverlap := Min(len(a)-1, len(b)-1)
+	appr := 0
+
+	//println(maxOverlap)
+
+	//println(a, " ", len(a))
+	//println(b, " ", len(b))
+
+ 	if len(b)>len(a) {
+ 		SwapString(&a,&b)
+ 	}
+
+  	// Start with maximum possible overlap and work down until a max is found
+ 	for (maxOverlap>0) {
+ 		//fmt.Println(a[len(a)-maxOverlap:])
+ 		//fmt.Println(b[0:maxOverlap])
+		// fmt.Println(b[len(b)-maxOverlap:])
+		// fmt.Println(a[0:maxOverlap])
+		// fmt.Println("-----")
+
+ 		right := ApproximateHamming(maxOverlap, a[len(a)-maxOverlap:], b[0:maxOverlap])
+ 		left := ApproximateHamming(maxOverlap, b[len(b)-maxOverlap:], a[0:maxOverlap]) 		
+
+		//fmt.Println(right, left)
+
+ 		if  right > appr {
+ 			appr = right
+ 		}
+ 		
+ 		if  left > appr {
+ 			appr = left
+ 		}
+ 		
+ 		maxOverlap -= 1
+ 		//fmt.Println("maxoverlap ", maxOverlap)
+ 		if maxOverlap < appr {
+ 			break
+ 		}
+
+ 		
+ 	}
+ 	//fmt.Println(appr, " ", maxOverlap)
+ 	return appr	
+}
+
+// Approximate overlaps on Hamming
+func ApproximateHammingOverlap1(a, b string) float64 {
+
+	maxOverlap := Min(len(a)-1, len(b)-1)
 	mlen := maxOverlap
 	appr := 0
 
@@ -298,9 +346,9 @@ func ApproximateHammingOverlap(a, b string) int {
  		}
  	}
  	pct := float64(appr)/float64(mlen);
- 	fmt.Println(pct)
+ 	//fmt.Println(pct)
  	//fmt.Println(appr, " ", maxOverlap)
- 	return appr	
+ 	return pct	
 }
 
 // Aproximate overlaps on Levenshtein
@@ -362,11 +410,23 @@ func Condition(str1, str2 string, opt int, threshold int) bool {
 			return (ApproximateLevenshteinOverlap(str1,str2)>threshold || 
 			ApproximateLevenshteinOverlap(str1, second_rev)>threshold || 
 			ApproximateLevenshteinOverlap(first_rev,str2)>threshold)
-		}
+		}		
 	}
 	return false
 }
 
+func Condition1(str1, str2 string, opt int, threshold float64) bool {
+	first_rev := string(ReverseComplement([]byte(str1)))
+	second_rev := string(ReverseComplement([]byte(str2)))
+	switch opt {
+		case 4: {
+			return (ApproximateHammingOverlap1(str1,str2)>threshold || 
+			ApproximateHammingOverlap1(str1, second_rev)>threshold || 
+			ApproximateHammingOverlap1(first_rev,str2)>threshold)
+		}
+	}
+	return false
+}
 
 // main
 func main() {
@@ -375,7 +435,8 @@ func main() {
 
 	var queries_file = flag.String("qf", "", "queries file")
 	var selector = flag.Int("sr", 1, "measuring distance selector")
-	var overlap_threshold = flag.Int("ot", 1, "overlap two substring threshold")
+	//var overlap_threshold = flag.Int("ot", 1, "overlap two substring threshold")
+	var overlap_threshold = flag.Float64("ot", 1, "overlap two substring threshold")
 
 	flag.Parse()
 	//fmt.Println(*queries_file)
@@ -407,7 +468,7 @@ func main() {
 		for i:=0; i<len(DNAreads); i++ {
 			for j:=i+1; j<len(DNAreads); j++  {				
 				// if Condition(string(DNAreads[i].data),string(DNAreads[j].data), *selector, *overlap_threshold) {
-				if Condition(string(DNAreads[i].data),string(DNAreads[j].data), *selector, th) {
+				if Condition1(string(DNAreads[i].data),string(DNAreads[j].data), *selector, th) {
 					//fmt.Println(i, j)
 					uf.Union(i,j)						
 				}
