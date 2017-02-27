@@ -476,7 +476,7 @@ func main() {
 		}
 
 		// fmt.Println(uf.GetNumClusters())
-		//uf.PrintClusters()
+		uf.PrintClusters()
 		// PrintDNAreads(DNAreads)					
 				
 	}		
